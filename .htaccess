@@ -3,9 +3,6 @@ Options -MultiViews -Indexes
 RewriteEngine On
 RewriteBase /
 
-# Pass _next/ static assets directly — never rewrite
-RewriteRule ^_next/ - [L]
-
 # Pass existing files and directories directly
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
